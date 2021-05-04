@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: rgb(246, 210, 48);
+    display: flex;
+    justify-content: space-around;
+    height: 10vw;
+    padding-top: 2vh;
+}
+.pedimonDiv{
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+    max-width: 500px;
+}
+nav ul li{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+nav ul li a{ 
+    text-decoration: none;
+    font-size: 2vh;
+    color:#0c4da2;
+}
+
+.primerSection {
+    background: rgb(246, 210, 48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+}
+
+.primerArticle{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.segundoArticle {
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    padding:2vw;
+}
+
+.segundoArticle img{
+    width: 80%;
+}
+.tituloPedimonYa img{
+    width: 40vw;
+    
+}
+.textoPedimonYa{
+    font-size: 2vw;
+    width: 40vw;
+}
+
+#atrapar{
+    background: #0c4da2;
+    color: white;
+    font-size: 2vw;
+    padding: 1vw;
+    margin-top: 2vw;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.segundoSection {
+    background: #0c4da2 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vw;
+}
+.pediArticle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(246, 210, 48);
+    font-size: 3vw;
+    width: 65%;
+}
+.pediArticle p{
+    margin-top: 1vh;
+    color:white;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+}
+.pedidoGrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    width: 80vw;
+    margin-top: 5vw;
+}
+.pedidoGrid div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.pedidoGrid div img{
+    width: 10vw;
+}
+
+.pedidoGrid div p{
+    display:flex;
+    justify-content: center;
+    font-size: 2vw;
+    color: white;
+    width: 80%;
+    text-align: center;
+    margin-top: 2vh;
+}
+.sectiongrid{
+    display: flex;
+    justify-content: center;
+}
+
+.grid-pokemons{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-evenly;
+}
+
+.pokemon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    width:40vw;
+    height: 30vh;
+    border-radius: 20px;
+    margin: 3vw;
+}
+.pokemonDiv{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0c4da2;
+}
+.pokemonDiv h4{
+    color:#0c4da2;
+    font-size: 6vw;
+}
+
+.grid-pokemons div img{
+    width: 100%;
+}
+
+.comprar{
+    margin-top: 1vw;
+    background: rgb(246, 210, 48);
+    outline: none;
+    border: none;
+    padding: 1.5vw;
+    border-radius: 10px;
+}
+
+.listaPedis{
+    color: #0c4da2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6vw;
+    padding: 4vw;
+}
+.carritoGrid{
+    display: grid;
+    
+    grid-template-areas: 'imagen descripcion descripcion precio'
+    'imagenDos descripcionDos descripcionDos precioDos'
+    'imagenTres descripcionTres descripcionTres precioTres'
+    'empty empty final total' ;
+    margin: 5vw;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75); -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+.carritoGrid .carritoPokemon{
+    width: 100%;
+}
+
+#carritoPokemonUno{
+    grid-area: imagen;
+    width: 15vw;
+    
+}
+#carritoPokemonDos{
+    grid-area: imagenDos;
+    width: 15vw;
+}
+#carritoPokemonTres{
+    grid-area: imagenTres;
+    width: 15vw;
+}
+.carritoPokemon img{
+    width: 80%;
+}
+.carritoNombreUno{
+    grid-area: descripcion;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.carritoNombreDos{
+    grid-area: descripcionDos;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.carritoNombreTres{
+    grid-area: descripcionTres;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.carritoPrecioUno{
+    grid-area: precio;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.carritoPrecioDos{
+    grid-area: precioDos;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.carritoPrecioTres{
+    grid-area: precioTres;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.ponele{
+    color:#0c4da2;
+    font-size: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vw;
+    margin-bottom: 3vw;
+}
+.carritoFinal{
+    grid-area: final;
+    border-top: black;
+}
+.carritoTotal{
+    grid-area: total;
+    border-top: black;
+}
+#finalizar{
+    background-color: rgb(246, 210, 48);
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 2vw;
+    font-size: 4vw;
+}
+.divFinalizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color:#0c4da2;
+    height: 10vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+}
+.legales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+}
+.contacto h3, p{
+    display: flex;
+    justify-content: center;
+}
+.legales h3, p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.segundoPedimon{
+    width: 50vw;
+}
+.divSegundoPedimon{
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+    background-color: #0c4da2;
+    padding: 5vw;
+}
+.name{
+    background-color: #0c4da2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 7vw;
+    padding: 4vw;
+}
